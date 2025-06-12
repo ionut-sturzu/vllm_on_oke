@@ -55,6 +55,7 @@ module "oke" {
   bastion_image_type       = var.bastion_image_type
   bastion_image_id         = var.bastion_image_id
   bastion_user             = var.bastion_user
+  bastion_shape            = var.bastion_shape
 
   # Operator variables
   create_operator                          = var.create_operator_and_bastion
@@ -65,6 +66,7 @@ module "oke" {
   operator_image_id                        = var.operator_image_id
   operator_install_kubectl_from_repo       = var.operator_install_kubectl_from_repo
   operator_user                            = var.operator_user
+  operator_shape                           = var.operator_shape
 
   # Network variables
   create_vcn               = var.create_vcn

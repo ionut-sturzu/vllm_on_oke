@@ -88,6 +88,12 @@ variable "bastion_user" {
   description = "User for SSH access through bastion host."
 }
 
+variable "bastion_shape" {
+  type       = map(any)
+  default    = { "shape" = "VM.Standard.E4.Flex" }
+  description = "The compute shape and configuration to use for the bastion instance."
+}
+
 
 ### OKE Module - Operator Variables
 variable "create_operator_policy_to_manage_cluster" {
@@ -141,6 +147,12 @@ variable "operator_user" {
   type        = string
   default     = "opc"
   description = "User for SSH access to operator host."
+}
+
+variable "operator_shape" {
+  type        = map(any)
+  default     = { "shape" = "VM.Standard.E4.Flex" }
+  description = "The compute shape and configuration to use for the operator instance."
 }
 
 
