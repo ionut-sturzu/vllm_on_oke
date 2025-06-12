@@ -186,10 +186,11 @@ compartment_id         = "ocid1.compartment.oc1..aaaaaaaaqi3if6t4n24qyabx5pjzlw6
 # Jupyter Hub deployment values
 jupyter_admin_user     = "oracle-ai"
 jupyter_admin_password = "<admin-passowrd>"
-playbooks_repo         = "https://github.com/robo-cap/llm-jupyter-notebooks.git"
+jupyter_playbooks_repo = "https://github.com/robo-cap/llm-jupyter-notebooks.git"
 
 # vLLM Deployment values
 HF_TOKEN               = "<my-HuggingFace-token>"
+LLM_API_KEY            = "<llm-password>"
 model                  = "meta-llama/Meta-Llama-3-8B-Instruct"
 ```
 
